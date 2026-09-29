@@ -86,10 +86,10 @@ if (namaPelanggan) {
 // 2. Buat variabel "totalPoin" yang menjumlahkan ketiga variabel poin di atas.
 // 3. Cetak rincian perolehan poin dan totalPoin ke Console menggunakan console.log().
 
-poinKopi = 45;
-poinMakanan = 35;
-poinMerchandise = 20;
-totalPoin = poinKopi + poinMakanan + poinMerchandise;
+let poinKopi = 45;
+let poinMakanan = 35;
+let poinMerchandise = 20;
+let totalPoin = poinKopi + poinMakanan + poinMerchandise;
 
 console.log("Rincian Perolehan Poin:");
 console.log("- Poin Kopi:", poinKopi);
@@ -130,6 +130,14 @@ if (totalPoin >= 100) {
 
 console.log("Tier Member:", tierMember);
 console.log("Benefit:", benefit);
+
+alert(
+    "Hasil Member:\n" +
+    "Nama Pelanggan: " + namaPelanggan + "\n" +
+    "Jumlah Poin: " + totalPoin + "\n" +
+    "Tier Member: " + tierMember + "\n" +
+    "Benefit: " + benefit
+);
 
 // ============================================================
 // AKTIVITAS 5: Function — Membuat Fungsi yang Bisa Dipakai Ulang
@@ -185,7 +193,23 @@ console.log("Pelanggan C:");
 console.log("Total Poin:", totalPoinC);
 console.log("Tier:", tierC);
 
+// ============================================================
+// AKTIVITAS 6: Array & For Loop — Daftar Menu Rekomendasi
+// ============================================================
 
+// TODO 6A:
+// Buat variabel Array bernama "menuRekomendasi" yang berisi minimal 5 nama menu kopi/makanan.
+let menuRekomendasi = ["Kopi Latte", "Kopi Tubruk", "Kopi Susu", "Kopi Hitam", "Kopi Mocca"];
+
+
+// TODO 6B:
+// Gunakan perulangan "for loop" untuk mencetak setiap menu ke Console dengan format:
+// "1. Nama Menu", "2. Nama Menu", dst. Gunakan (i + 1) untuk nomor urutnya.
+// TODO 6B:
+
+for (let i = 0; i < menuRekomendasi.length; i++) {
+    console.log((i + 1) + ". " + menuRekomendasi[i]);
+}
 
 
 
@@ -195,5 +219,9 @@ console.log("Tier:", tierC);
 // Akhiri program dengan: console.log("=== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===");
 console.log("Jumlah total menu:", menuRekomendasi.length);
 console.log("=== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===");
+
+
+
+
 
 
