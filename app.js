@@ -97,3 +97,6 @@ console.log("- Poin Makanan:", poinMakanan);
 console.log("- Poin Merchandise:", poinMerchandise);
 console.log("Total Poin:", totalPoin);
 
+
+
+
